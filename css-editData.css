@@ -1,0 +1,108 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:Helvetica;
+  }
+  .outer_div{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+  }
+  .bgvid.outer {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+  }
+  .inner {
+    position: absolute;
+  }
+  .inner_div{
+    width:400px;
+    height:625px;
+    position:absolute;
+    top:calc(50vh - 350px);
+    left:calc(50vw - 200px);
+    overflow:hidden;
+  }
+  .bgvid.inner{
+    top:calc(-50vh + 200px);
+    left:calc(-50vw + 200px);
+    filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+    -webkit-filter:blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter:blur(10px);
+  }
+  .login_div{
+    position:absolute;
+    height:100%;
+    width:100%;
+    font-family:Helvetica;
+    color:#fff;
+    background:rgba(0,0,0,0.13);
+    padding:30px 0px;
+  }
+  .login_div h1{
+    color: yellowgreen;
+    text-align:center;
+    margin:30px 0;
+    font-size:30px;
+  }
+  .login_div input{
+    display:block;
+    width:300px;
+    margin:20px auto;
+    padding:15px;
+    background:rgba(0,0,0,0.2);
+    color:#fff;
+    border:0;
+  }
+  .login_div input:focus,.box input:active,.box button:focus,.box button:active{
+    outline:none;
+  }
+
+  .login_div button{
+    background:saddlebrown;
+    border:0;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
+    width:330px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+  }
+  .login_div button:active{
+    background:yellowgreen;
+  }
+
+  ul {
+    list-style-type: none;
+    float: left;
+    margin-top: 20px;
+  }
+  
+  ul li{
+    display: inline-block;
+  }
+  
+  ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 2px solid saddlebrown;
+  transition: 0.6s;
+  background-color: rgba(180, 120, 96, 0.89);
+}
+
+ul li :hover{
+  background-color: rgba(113, 180, 96, 0.89);
+  color: rgb(58, 61, 56);
+  border: 2px solid yellowgreen;
+}
+  
+  .main{
+    max-width: 1200px;
+    margin: 0px;
+  }
+  

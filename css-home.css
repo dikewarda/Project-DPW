@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Helvetica;
+}
+
+header{
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.062), rgba(53, 52, 52, 0.377)), url(img/bg_index.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style-type: none;
+    float: left;
+    margin-top: 20px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+a{
+    background-color:rgba(180, 120, 96, 0.89);  
+    color: black;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid saddlebrown;
+    transition: 0.6s;
+    background-color: rgba(180, 120, 96, 0.89);
+  }
+  
+  ul li :hover{
+    background-color: rgba(113, 180, 96, 0.89);
+    color: rgb(58, 61, 56);
+    border: 2px solid yellowgreen;
+  }
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    color: white;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+.button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    border: 2px solid saddlebrown;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    background-color:rgba(113, 180, 96, 0.89); 
+    color: rgb(58, 61, 56);
+    border: 2px solid yellowgreen;
+}
+
+

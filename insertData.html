@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tambah Data</title>
+        <link rel="stylesheet" type="text/css" href="css-insertData.css">
+        <link rel="shortcut icon" href="logo/logoInsert.png">
+    </head>
+    <body>
+      <header style="height: 60px;">
+        <div class="main">
+          <ul>
+            <li><a href="dataKulkas.php" class="active">Kembali</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="outer_div">
+            <video id="Video1" class="bgvid outer" autoplay="false" muted="muted" preload="auto" loop>
+                <source src="loginbg/loginbg.mp4" type="video/mp4">
+            </video>
+            <div class="inner_div">
+              <video id="Video2" class="bgvid inner" autoplay="false" muted="muted" preload="auto" loop>
+                <source src="loginbg/loginbg.mp4" type="video/mp4">
+              </video>
+              <div class="login_div">
+                <h1>Tambah Data</h1>
+                <form action="insertProses.php" method="POST">
+                    <label>Pilih Tabel :
+                        <select name="tabel">
+                            <option value="kulkas">Kulkas</option>
+                            <option value="mc">Mesin Cuci</option>
+                            <option value="tv">Televisi</option>
+                        </select></label>
+                    <input type="text" name="id" placeholder="ID Produk">
+                    <input type="text" name="merk" placeholder="Merk">
+                    <input type="text" name="tipe" placeholder="Tipe">
+                    <input type="file" name="foto" placeholder="Gambar Produk">
+                    <input type="text" name="deskripsi" placeholder="Deskripsi">
+                    <input type="number" name="stok" placeholder="Stok">
+                    <button>Simpan</button>
+                </form>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

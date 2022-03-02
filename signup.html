@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="css-signup.css">
+        <link rel="shortcut icon" href="logo/logoIndex.jpg">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+      <header style="height: 60px;">
+        <div class="main">
+          <ul>
+            <li><a href="javascript:window.history.go(-1);">Kembali</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="outer_div">
+        <video id="Video1" class="bgvid outer" autoplay="false" muted="muted" preload="auto" loop>
+            <source src="loginbg/loginbg.mp4" type="video/mp4">
+        </video>
+        <div class="inner_div">
+          <video id="Video2" class="bgvid inner" autoplay="false" muted="muted" preload="auto" loop>
+            <source src="loginbg/loginbg.mp4" type="video/mp4">
+          </video>
+          <div class="login_div">
+            <h1>Sign Up</h1>
+            <form action="signupProses.php" method="POST">
+                <input type="text" placeholder="Username" name="username"/>
+                <input type="password" placeholder="Password" name="password"/>
+                <input type="text" placeholder="Nama" name="nama">
+                <div class="column">
+                  <script>
+                    $(function() {
+                      $("#date_ex").datepicker({
+		 dateFormat:"yy-mm-dd",
+	  });
+	});
+                  </script>
+                  <input type="text" name="ttl_admin" id="date_ex" placeholder="Tanggal Lahir">
+                  <label>Jabatan :
+                    <select name="jabatan_admin">
+                        <option value="Admin">Admin</option>
+                        <option value="Helper">Helper</option>
+                    </select></label>
+                </div>
+                <label>Level : 
+                  <select name="level">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                  </select></label>
+                <button>Sign Up</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    </body>
+</html>

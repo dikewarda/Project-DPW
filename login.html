@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+        <link rel="shortcut icon" href="logo/logoIndex.jpg">
+        <link rel="stylesheet" type="text/css" href="css-login.css">
+    </head>
+    <body>
+      <header style="height: 60px;">
+        <div class="main">
+          <ul>
+            <li><a href="javascript:window.history.go(-1);">Home</a></li>
+          </ul>
+        </div>
+      </header>
+        <div class="outer_div">
+            <video id="Video1" class="bgvid outer" autoplay="false" muted="muted" preload="auto" loop>
+                <source src="loginbg/loginbg.mp4" type="video/mp4">
+            </video>
+            <div class="inner_div">
+              <video id="Video2" class="bgvid inner" autoplay="false" muted="muted" preload="auto" loop>
+                <source src="loginbg/loginbg.mp4" type="video/mp4">
+              </video>
+              <div class="login_div">
+                <h1>Login</h1>
+                <form action="loginProses.php" method="POST">
+                    <input type="text" placeholder="Username" name="username"/>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <button>Login</button>
+                </form>
+                <p>Not a member? <span><a href="signup.html">Sign Up</a></span></p>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>
